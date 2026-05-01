@@ -1,0 +1,107 @@
+/* ===== Reset! ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+}
+
+/* ===== Variables ===== */
+:root {
+  --green-color: #c5f82a;
+  --links-color: #333333;
+  --profile-bg-color: #1f1f1f;
+  --bg-color: #141414;
+}
+
+/* ===== Main! ===== */
+body {
+  background-color: var(--bg-color);
+  color: white;
+  text-align: center;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+}
+main {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+.profile {
+  background-color: var(--profile-bg-color);
+  width: 345px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 10px;
+  padding: 20px 20px 40px 20px;
+}
+.profile-picture {
+  width: 80px;
+  border-radius: 50%;
+  margin: 0.5rem 0;
+}
+h1 {
+  font-size: 1.375rem;
+  font-weight: 600;
+  margin-bottom: -0.5rem;
+}
+span {
+  color: var(--green-color);
+  font-weight: 600;
+  font-size: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+p {
+  font-size: 0.75rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 90%;
+}
+li {
+  background-color: var(--links-color);
+  border-radius: 8px;
+  transition: 0.3s;
+}
+li a {
+  display: block;
+  padding: 14px;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+li:hover {
+  background-color: var(--green-color);
+}
+li:hover a {
+  color: var(--links-color);
+}
+/* ===== Footer! ===== */
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+  padding: 1rem;
+}
+.attribution a {
+  color: #3e52a3;
+}
